@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.MainActivity">
+
+    <TextView
+        android:id="@+id/txtWage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/gothic_a1_black"
+        android:text="Wage"
+        android:textColor="#EC5252"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtReport"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtReport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/gothic_a1_black"
+        android:text="Calculator"
+        android:textColor="#434343"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtWage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtEmployee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/gothic_a1_regular"
+        android:text="Enter your name"
+        android:textColor="#434343"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtWage" />
+
+    <EditText
+        android:id="@+id/enterEmployeeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/gothic_a1_regular"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="Surname, First Name"
+        android:textColor="#616161"
+        app:layout_constraintStart_toStartOf="@+id/txtEmployee"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmployee" />
+
+    <TextView
+        android:id="@+id/employeeType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/gothic_a1_regular"
+        android:text="Select employee type"
+        android:textColor="#434343"
+        app:layout_constraintStart_toStartOf="@+id/enterEmployeeName"
+        app:layout_constraintTop_toBottomOf="@+id/enterEmployeeName" />
+
+    <Button
+        android:id="@+id/btnReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/gothic_a1_black"
+        android:text="Regular"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/employeeType"
+        app:layout_constraintTop_toBottomOf="@+id/employeeType" />
+
+    <Button
+        android:id="@+id/btnProb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/gothic_a1_black"
+        android:text="Probationary"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/btnReg"
+        app:layout_constraintTop_toTopOf="@+id/btnReg" />
+
+    <Button
+        android:id="@+id/btnPT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/gothic_a1_black"
+        android:text="Part time"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/btnProb"
+        app:layout_constraintTop_toTopOf="@+id/btnProb" />
+
+    <TextView
+        android:id="@+id/txtEmployeeType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/gothic_a1_regular"
+        android:text="Employee type: "
+        android:textColor="#434343"
+        app:layout_constraintStart_toStartOf="@+id/btnReg"
+        app:layout_constraintTop_toBottomOf="@+id/btnReg" />
+
+    <TextView
+        android:id="@+id/hoursRendered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/gothic_a1_regular"
+        android:text="Enter hours rendered"
+        android:textColor="#434343"
+        app:layout_constraintStart_toStartOf="@+id/txtEmployeeType"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmployeeType" />
+
+    <EditText
+        android:id="@+id/enterHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/gothic_a1_regular"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:text="1"
+        android:textColor="#616161"
+        app:layout_constraintStart_toStartOf="@+id/hoursRendered"
+        app:layout_constraintTop_toBottomOf="@+id/hoursRendered" />
+
+    <Button
+        android:id="@+id/btnProceed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gothic_a1_black"
+        android:text="proceed"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterHours" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

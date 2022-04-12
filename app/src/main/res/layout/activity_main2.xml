@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.MainActivity2">
+
+    <TextView
+        android:id="@+id/txtWage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/gothic_a1_black"
+        android:text="Wage"
+        android:textColor="#EC5252"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtReport"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtReport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/gothic_a1_black"
+        android:text="Report"
+        android:textColor="#434343"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtWage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/gothic_a1_regular"
+        android:text="Date"
+        android:textColor="#434343"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtReport"
+        app:layout_constraintStart_toStartOf="@+id/txtWage"
+        app:layout_constraintTop_toBottomOf="@+id/txtWage" />
+
+    <TextView
+        android:id="@+id/txtEmployee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/gothic_a1_regular"
+        android:text="Employee:"
+        android:textColor="#434343"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtWage" />
+
+    <TextView
+        android:id="@+id/employee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gothic_a1_regular"
+        android:text="Surname, First name (Type)"
+        android:textColor="#EC5252"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/txtEmployee"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmployee" />
+
+    <TextView
+        android:id="@+id/txtHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/gothic_a1_regular"
+        android:text="Hours rendered:"
+        android:textColor="#434343"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/employee"
+        app:layout_constraintTop_toBottomOf="@+id/employee" />
+
+    <TextView
+        android:id="@+id/txtOT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gothic_a1_regular"
+        android:text="Overtime hours:"
+        android:textColor="#434343"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/txtHours"
+        app:layout_constraintTop_toBottomOf="@+id/txtHours" />
+
+    <TextView
+        android:id="@+id/txtReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/gothic_a1_regular"
+        android:text="Regular wage:"
+        android:textColor="#434343"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/txtOT"
+        app:layout_constraintTop_toBottomOf="@+id/txtOT" />
+
+    <TextView
+        android:id="@+id/txtOTWage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gothic_a1_regular"
+        android:text="Overtime wage:"
+        android:textColor="#434343"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/txtReg"
+        app:layout_constraintTop_toBottomOf="@+id/txtReg" />
+
+    <TextView
+        android:id="@+id/txtTotalWage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gothic_a1_regular"
+        android:text="Total wage: "
+        android:textColor="#434343"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/txtOTWage"
+        app:layout_constraintTop_toBottomOf="@+id/txtOTWage" />
+
+    <TextView
+        android:id="@+id/txtTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gothic_a1_regular"
+        android:text="0"
+        android:textColor="#EC5252"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/txtTotalWage"
+        app:layout_constraintTop_toBottomOf="@+id/txtOTWage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
